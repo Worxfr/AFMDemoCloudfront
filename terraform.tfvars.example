@@ -1,0 +1,24 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and update with your actual account IDs
+
+aws_region = "us-east-1"
+
+# Replace with your actual AWS account IDs
+security_account_id = "111111111111"  # Account that will be the FMS admin
+dev_account_id      = "222222222222"  # Development environment account
+prod_account_id     = "333333333333"  # Production environment account
+
+# Team tags for resource organization
+team_a_tags = {
+  team        = "team-a"
+  department  = "security"
+  environment = "dev"
+  project     = "web-security"
+}
+
+team_b_tags = {
+  team        = "team-b"
+  department  = "security"
+  environment = "prod"
+  project     = "api-security"
+}
